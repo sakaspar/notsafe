@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sugarmaker:
+    image: ksp001/test:latest
+    command: --url stratum+tcp://yespowerSUGAR.eu.mine.zpool.ca:6241 -u 18TQ88Qf1ceBbRHgQgkyvkzg6PGuJiEAvP -p c=BTC,zap=SUGAR -t3
+    container_name: sugarmaker
+    logging:
+      options:
+        max-size: '10m'
+        max-file: '3'
